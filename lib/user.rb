@@ -15,4 +15,12 @@ attr_reader :name,
     listener_arg.learn(joke_arg)
   end
 
+  def knows_joke?
+    if @jokes[0].id != @jokes[1].id
+     false
+    else
+      true
+    end
+  end
+
 end
